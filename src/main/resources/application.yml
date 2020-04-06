@@ -69,3 +69,10 @@ spring:
         max-idle: 8
         max-wait: -1ms
         min-idle: 0
+  devtools:
+    restart:
+      enabled: true
+      trigger-file: .trigger-file
+      additional-paths: src/main/resources/templates
+    livereload:
+      enabled: true

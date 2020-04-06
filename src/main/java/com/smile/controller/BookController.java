@@ -24,6 +24,11 @@ public class BookController {
         return book.toString() + ">>>" + author.toString();
     }
 
+    @PostMapping("/testbook")
+    public String testAddBook(@RequestBody Book book) {
+        return book.toString();
+    }
+
     @GetMapping("/book")
     public Book book() {
         Book book = new Book();

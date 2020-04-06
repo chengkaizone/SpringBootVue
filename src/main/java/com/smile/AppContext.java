@@ -10,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class AppContext {
 
     public static void main(String[] args) {
+        //System.setProperty("spring.devtools.restart.enabled", "false");
         SpringApplication.run(AppContext.class, args);
         //SpringApplicationBuilder builder = new SpringApplicationBuilder(App.class);
         //builder.bannerMode(Banner.Mode.OFF).run(args);
