@@ -2,6 +2,7 @@ package com.smile.dao;
 
 import com.smile.bean.Book;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
@@ -12,6 +13,7 @@ import java.util.List;
  * JdbcTemplate演示
  */
 @Repository
+@CacheConfig(cacheNames = "book_cache")
 public class BookDao {
 
     @Autowired

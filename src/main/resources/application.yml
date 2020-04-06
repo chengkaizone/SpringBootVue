@@ -34,14 +34,14 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL57Dialect
-  data:
-    mongodb:
-      authentication-database: admin
-      database: test
-      host: localhost
-      port: 27017
-      username: sang
-      password: 123
+#  data:
+#    mongodb:
+#      authentication-database: admin
+#      database: test
+#      host: localhost
+#      port: 27017
+#      username: sang
+#      password: 123
 
   servlet:
     multipart:
